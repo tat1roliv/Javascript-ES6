@@ -103,30 +103,119 @@ total1; // 65
 const total2 = aulas.reduce((acc, cur) => acc + cur, 100);
 total2; // 165
 
-/*
-//Reduce Passo a Passo 1
-// 1
-aulas.reduce((0, 10) => {
-    return 0 + 10;
-   }, 0); // retorna 10
-   // 2
-   aulas.reduce((10, 25) => {
-    return 10 + 25;
-   }, 0); // retorna 35
-   // 3
-   aulas.reduce((35, 30) => {
-    return 35 + 30;
-   }, 0); // retorna 65
 
 
-const aulas = [10, 25, 30];
-// 1
-aulas.reduce((10, 25) => {
- return 10 + 25;
-}) // retorna 35
-// 2
-aulas.reduce((35, 30) => {
- return 35 + 30;
-}) // retorna 65
 
-  */    
+
+//Maior Valor com [].reduce()
+const numeros = [10, 25, 60, 5, 35, 10];
+const maiorValor = numeros.reduce((anterior, atual) => {
+ return anterior < atual ? atual : anterior;
+});
+maiorValor; // 60
+
+const aulas = [
+    {
+    nome: 'HTML 1',
+    min: 15
+    },
+    {
+    nome: 'HTML 2',
+    min: 10
+    },
+    {
+    nome: 'CSS 1',
+    min: 20
+    },
+    {
+    nome: 'JS 1',
+    min: 25
+    },
+   ]
+   const listaAulas = aulas.reduce((acumulador, atual, index) => {}, {});
+
+
+
+
+//[].reduceRight()
+const frutas = ['Banana', 'Pêra', 'Uva'];
+const frutasRight = frutas.reduceRight((acc, fruta) => acc + ' ' + fruta);
+
+const frutasLeft = frutas.reduce((acc, fruta) => acc + ' ' + fruta);
+frutasRight; // Uva Pêra Banana
+frutasLeft; // Banana Pêra Uva
+
+
+//[].some()
+const frutas = ['Banana', 'Pêra', 'Uva'];
+const temUva = frutas.some((fruta) => {
+ return fruta === 'Uva';
+}); // true
+function maiorQue100(numero) {
+ return numero > 100;
+}
+const numeros = [0, 43, 22, 88, 101, 2];
+const temMaior = numeros.some(maiorQue100); // true
+
+
+
+
+
+
+//[].every()
+const frutas = ['Banana', 'Pêra', 'Uva', ''];
+// False pois pelo menos uma fruta
+// está vazia '', o que é um valor falsy
+const arraysCheias = frutas.every((fruta) => {
+ return fruta; // false
+});
+const numeros = [6, 43, 22, 88, 101, 29];
+const maiorQue3 = numeros.every(x => x > 3); // true
+
+
+
+
+//[]find()findIndex()
+const frutas = ['Banana', 'Pêra', 'Uva', 'Maçã'];
+const buscaUva = frutas.findIndex((fruta) => {
+    return fruta === 'Uva';
+   }); // 2
+   const numeros = [6, 43, 22, 88, 101, 29];
+   const buscaMaior45 = numeros.find(x => x > 45); // 88
+   
+
+
+   //[].].filter()
+      const frutas = ['Banana', undefined, null, '', 'Uva', 0,
+'Maçã'];
+const arrayLimpa = frutas.filter((fruta) => {
+ return fruta;
+}); // ['Banana', 'Uva', 'Maçã']
+const numeros = [6, 43, 22, 88, 101, 29];
+const buscaMaior45 = numeros.filter(x => x > 45); // [88, 101]
+
+
+
+// /Filter em Objetos
+const aulas = [
+    {
+    nome: 'HTML 1',
+    min: 15
+    },
+    {
+    nome: 'HTML 2',
+    min: 10
+    },
+    {
+    nome: 'CSS 1',
+    min: 20
+    },
+    {
+    nome: 'JS 1',
+    min: 25
+    },
+   ]
+   
+   //const aulasMaiores = aulas.filter((aula) => {};
+    // [{nome: 'CSS 1', min: 20}, {nome: 'JS 1', min: 25}]
+   
