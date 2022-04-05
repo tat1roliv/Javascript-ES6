@@ -170,6 +170,7 @@ frutasLeft; // Banana Pêra Uva
 
 
 //[].some()
+//procura um primeiro true
 const frutas = ['Banana', 'Pêra', 'Uva'];
 const temUva = frutas.some((fruta) => {
  return fruta === 'Uva';
@@ -186,6 +187,7 @@ const temMaior = numeros.some(maiorQue100); // true
 
 
 //[].every()
+//!!'' procura um primeiro false
 const frutas = ['Banana', 'Pêra', 'Uva', ''];
 // False pois pelo menos uma fruta
 // está vazia '', o que é um valor falsy
