@@ -92,7 +92,22 @@ const aulas = [
    const nomesAulas = aulas.map(puxarNomes);
    // ['HTML 1', 'HTML 2', 'CSS 1', 'JS 1']
 
+const tempoAulas = aulas.map(aula => aula.min);
 
+function nomeAulas(aula){
+    return aula.nome;
+}
+
+//const arrayNomeAulas = aulas.map(nomeAulas);//recebendo diretamente a funcao
+
+const arrayNomeAulas = aulas.map(function (aula){
+    return aula.nome;
+});
+/*
+const nomeAulas = function (aula){
+    return aula.nome;
+}
+*/
 
 //[].reduce()
 const aulas = [10, 25, 30];
@@ -113,6 +128,14 @@ const maiorValor = numeros.reduce((anterior, atual) => {
  return anterior < atual ? atual : anterior;
 });
 maiorValor; // 60
+
+const maiorValor2 = numeros.reduce((anterior, atual) => {
+    if(anterior>atual)  {
+        return anterior;
+    } else{
+        return atual;
+    }
+   } 0);
 
 const aulas = [
     {
