@@ -158,7 +158,7 @@ const aulas = [
    const listaAulas = aulas.reduce((acumulador, atual, index) => {}, {});
 
 
-
+ 
 
 //[].reduceRight()
 const frutas = ['Banana', 'Pêra', 'Uva'];
