@@ -1,7 +1,5 @@
 // Retorne a soma total de caracteres dos
 // parágrafos acima utilizando reduce
-// html, com os seguintes parâmetros
-// tag, classe e conteudo.
 
 const paragrafos =  document.querySelectorAll('.fun p');
 
@@ -21,14 +19,25 @@ const totalCarac = Array.prototype.reduce.call(paragrafos, (acum, item) => {
 
 console.log(totalCarac);
 
+// Crie uma nova function que retorne novos elementos
+// html, com os seguintes parâmetros
+// tag, classe e conteudo.
 
+function criarElement(tag, classe, conteudo){
 
+    const elemento = document.createElement(tag);
+    classe ? elemento.classList.add(classe) : null ;
+    conteudo ? elemento.innerHTML = conteudo : null ;
+    return elemento;
+}
+
+console.log(criarElement('h1', 'titulo', 'novo h1'));
 // Crie uma nova função utilizando a anterior como base
 // essa nova função deverá sempre criar h1 com a
 // classe titulo. Porém o parâmetro conteudo continuará dinâmic
 
-const novoH1 = document.createElement('h1').classList.add('titulo');
-novoH1.innerHTML = 'novo texto';
 
-paragrafos.appendChild(novoH1); //move
+const h1titulo = criarElement.bind(null, 'h1', 'titulo');
 
+console.log(h1titulo('curso js'));
+console.log(h1titulo('curso angular'));
