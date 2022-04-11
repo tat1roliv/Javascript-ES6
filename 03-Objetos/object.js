@@ -10,8 +10,9 @@ const pessoa = new Object({
     idade: 28,
 })
 
-//Object.create(obj, defineProperties)
 
+
+//Object.create(obj, defineProperties)
 const carro = {
     rodas: 4,
     init(marca) {
@@ -29,8 +30,8 @@ const carro = {
    honda.init('Honda').acelerar();
 
    
-   //Object.assign(alvo, obj1, obj2)
 
+   //Object.assign(alvo, obj1, obj2)
    const funcaoAutomovel = {
     acelerar() {
     return 'acelerou';
@@ -51,6 +52,9 @@ const carro = {
 Object.assign(moto, funcaoAutomovel);
 Object.assign(carro, funcaoAutomovel);
 
+
+
+
 //Object.defineProperties(alvo, propriedades)
 const moto = {}
 Object.defineProperties(moto, {
@@ -68,6 +72,8 @@ Object.defineProperties(moto, {
 moto.rodas = 4;
 delete moto.capacete;
 moto;
+
+
 
 //getters setters
 const moto = {}
