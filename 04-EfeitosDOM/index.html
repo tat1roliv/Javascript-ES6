@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <nav class="menu js-menu">
+    <nav class="menu js-menu" data-tab="menu" >
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">Faq</a></li>
@@ -33,9 +33,9 @@
             <li><img src="assets/img/imagem5.jpg" alt="animal"></li>
             <li><img src="assets/img/imagem6.jpg" alt="animal"></li>
         </ul>
-        <div class="animais-descricao js-tabcontent">
+        <div class="animais-descricao" data-tab="content">
             <!--animal1-->
-            <section class="ativo">
+            <section class="ativo" data-anime="show-right">
                 <h2>Raposa</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
 
@@ -44,7 +44,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>
             <!--animal2-->
-            <section>
+            <section data-anime="show-right">
                 <h2>Esquilo</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
 
@@ -54,7 +54,7 @@
 
             </section>
             <!--animal3-->
-            <section>
+            <section data-anime="show-down">
                 <h2>Urso</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed dolorem culpa a molestiae voluptate!</p>
 
@@ -63,14 +63,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>
             <!--animal4-->
-            <section>
+            <section data-anime="show-down">
                 <h2>Lobo</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>   
             <!--animal5-->
-            <section>
+            <section data-anime="show-down">
                 <h2>Macaco</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus in minus unde, tenetur mollitia, voluptate nemo laboriosam, provident harum quibusdam reiciendis necessitatibus explicabo eaque? Tenetur.</p>
 
@@ -81,7 +81,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi esse obcaecati sit facilis voluptatem labore? Ex blanditiis eaque ullam accusantium!</p>
             </section>
             <!--animal5-->
-            <section>
+            <section data-anime="show-right">
                 <h2>Leão</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum excepturi corrupti officia praesentium officiis hic quaerat maiores nemo beatae sed, sit quia pariatur iure eos odio assumenda dignissimos perspiciatis? Deleniti?</p>
 
@@ -121,8 +121,9 @@
         <p>Testing project</p>
     </footer>
 
-    <!--script src="assets/js/animacao.js"></!--script-->
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/dataset-ex.js"></script>
+    <!--script src="assets/js/animacao.js"></!--script-->
     <!--script src="assets/js/seletores-dom.js"></!--script-->
     <!--script src="assets/js/seletores-dom-ex.js"></!--script-->
     <!--script src="assets/js/foreach-arrowfunction.js"></!--script-->
