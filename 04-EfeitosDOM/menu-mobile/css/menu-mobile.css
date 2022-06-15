@@ -1,4 +1,4 @@
-.menu-mobile{
+.js.menu-mobile{
     display:none;
 }
 
@@ -17,6 +17,8 @@
         color: #fff;
         cursor: pointer;
         margin: 10px;
+        position: relative;
+        z-index: 101;
     }
 
     .js.menu-mobile::before{
@@ -25,7 +27,7 @@
         height:2px;
         width:12px;
         background: #fff;
-        box-shadow: 0 4px #fff, 0 -4px #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;/*complementa o hamburguer*/
         margin-right: 4px;
         position: relative;
         z-index: 180;
@@ -40,6 +42,12 @@
         padding:60px 0 20px 0;
         top: 0;
         box-shadow: 2px 2px 2px 0 rgba(0,0,0,.3);
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
+    }
+
+    .js .dropdown-menu{
+        position: static;
+        border: none;
     }
 
 }
