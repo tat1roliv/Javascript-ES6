@@ -1,10 +1,10 @@
-.js [data-menu="button"]{
+.js.menu-mobile{
     display:none;
 }
 
 @media (max-width:767px) {
 
-    .js [data-menu="button"]{
+    .js.menu-mobile{
         display:flex;
         align-items:center;
         background: #222;
@@ -21,7 +21,7 @@
         z-index: 101;
     }
 
-    .js [data-menu="button"]::before{
+    .js.menu-mobile::before{
         content: '';
         display: inline-block;
         height:2px;
@@ -35,11 +35,11 @@
     }
 
     
-    .js [data-menu="button"].active::before{
+    .js.menu-mobile.active::before{
         transform: rotate(90deg);
     }
 
-    .js [data-menu="list"] {
+    .js.menu-mobile-list{
         display: none;
         position: absolute;
         background: #fb5;
@@ -51,7 +51,7 @@
         box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2);
     }
 
-    .js [data-menu="list"].active {
+    .js.menu-mobile-list.active {
         display: block;
     }
 
