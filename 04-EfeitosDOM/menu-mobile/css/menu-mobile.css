@@ -1,10 +1,10 @@
-.js.menu-mobile{
+.js [data-menu="button"]{
     display:none;
 }
 
 @media (max-width:767px) {
 
-    .js.menu-mobile{
+    .js [data-menu="button"]{
         display:flex;
         align-items:center;
         background: #222;
@@ -21,7 +21,7 @@
         z-index: 101;
     }
 
-    .js.menu-mobile::before{
+    .js [data-menu="button"]::before{
         content: '';
         display: inline-block;
         height:2px;
@@ -35,7 +35,7 @@
     }
 
     
-    .js.menu-mobile.active::before{
+    .js [data-menu="button"].active::before{
         transform: rotate(90deg);
     }
 
