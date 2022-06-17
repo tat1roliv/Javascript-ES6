@@ -6,21 +6,19 @@
   <title>Animais Fantásticos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-  <!--script>document.documentElement.className += ' js';</!script-->
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
   <div class="grid-container">
     <nav class="menu" data-menu="suave">
-      <!--mobile-->
-      <button class="js menu-mobile" data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
-
-      <ul data-menu="list" class="js menu-mobile-list" id="menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
         <li><a href="#animais">Animais</a></li>
         <li data-dropdown>
           <a href="sobre.html">Sobre</a>
           <ul class="dropdown-menu">
-            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="empresa.html">A Empresa</a></li>
             <li><a href="equipe.html">Equipe</a></li>
             <li><a href="socios.html">Sócios</a></li>
             <li><a href="investidores.html">Investidores</a></li>
@@ -128,7 +126,7 @@
 
     <section class="grid-section contato" data-anime="scroll" id="contato">
       <h1 class="titulo">Contato</h1>
-      <div class="mapa" data-tooltip aria-label="Estamos na Rambla!">
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
         <img src="img/mapa.png">
       </div>
       <ul class="dados">
@@ -144,7 +142,6 @@
     </footer>
   </div>
 
-  <!--modal container-->
   <section class="modal-container" data-modal="container">
     <div class="modal">
       <button data-modal="fechar" class="fechar">X</button>
@@ -157,7 +154,6 @@
       </form>
     </div>
   </section>
-
   <script type="module" src="js/script.js"></script>  
 </body>
 </html>
