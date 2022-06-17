@@ -31,14 +31,14 @@
         margin-right: 4px;
         position: relative;
         z-index: 180;
-       /* transition: all .3s ease;*/
+       transition: all .3s ease;
     }
 
-    /*
+    
     .js[data-menu="button"].active::before{
         transform: rotate(90deg)!important;
     }
-    */
+   
 
     .js.menu-mobile-list{
         display: none;
@@ -54,6 +54,7 @@
 
     .js.menu-mobile-list.active {
         display: block;
+        animation: show-right .3s forwards;
     }
 
     .js .dropdown-menu{
