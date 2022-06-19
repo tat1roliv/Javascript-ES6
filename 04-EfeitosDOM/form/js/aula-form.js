@@ -1,17 +1,27 @@
 
 /* forms */
 document.forms; // lista com os formulários
-document.forms.contato; // form com nome contato
+document.forms[0];
+document.forms.contato; // form com nome contato => o que tiver no atributo name=""
 document.forms.contato.elements; // elementos
 document.forms[0].elements[0].value; // valor do primeiro
 
 
 /* values */
+/*keyup ou change*/
 const form2 = document.getElementById('contato');
+
+/*digiticao ao toque*/
 function handleKeyUp(event) {
  console.log(event.target.value);
 }
 form2.addEventListener('keyup', handleKeyUp);
+
+/*apos concluir a digitacao + pega digitacao por audio*/
+function handleChange(event) {
+    console.log(event.target.value);
+   }
+form2.addEventListener('change', handleChange);
 
 
 /* validacao */
