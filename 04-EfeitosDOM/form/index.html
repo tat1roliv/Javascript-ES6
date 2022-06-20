@@ -20,7 +20,7 @@
       max-width: 400px;
       margin: 0 auto;
     }
-    input[type=text], textarea {
+    input, textarea {
       width: 100%;
       box-sizing: border-box;
       padding: .5rem;
@@ -91,15 +91,18 @@
    <!--form todos os dados-->
    <form name="contato" id="contato" >
     <label for="nome">Nome</label>
-    <input type="text" name="nome" id="nome">
+    <input type="text" name="nome" id="nome" required>
+    <span class="erro-form-dados"></span>
     <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
     <label for="mensagem">Mensagem</label>
+    <span class="erro-form-dados"></span>
     <textarea name="mensagem" id="mensagem"></textarea>
    </form>
 </section>
 
-  <script type="module" src="js/script.js"></script> 
-  <script src="js/aula-form.js"></script> 
+  <!--script type="module" src="js/script.js"></!--script--> 
+  <!--script src="js/aula-form.js"></!--script--> 
+  <script src="js/form-dados.js"></script> 
 </body>
 </html>
