@@ -14,7 +14,7 @@ operators
 /* unário */
 let num = 1
 
-console.log(++number)
+console.log(++num)
 
 /* binário */
 let number = 1
