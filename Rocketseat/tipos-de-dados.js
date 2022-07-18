@@ -13,7 +13,7 @@
 */
 
 /*
-* DADOS ESTTUTURAIS 
+* DADOS ESTRUTURAIS 
     objeto
         -array
         -map
