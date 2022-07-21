@@ -122,6 +122,27 @@ console.log( 0 ?  'verdadeiro' : 'false');
 
 console.log( Infinity ? 'verdadeiro' : 'falso' );
 
+console.log( true == 1 ); //true
+console.log( true === 1 ); //false
+console.log( false == 0 );//true
+console.log( false === 0 );//false
+
+
+/* precedencia de operadores*/
+
+// De cima para baixo, do mais importante ao menos importante.
+/*
+* grouping                      ( )
+* negação e incremento          ! ++ --
+* multiplicação e divisão       * /
+* adição e subtração            + -
+* relacional                    < <= > >=
+* igualdade                     == != === !==
+* AND                           && 
+* OR                            ||
+* condicional                   ?:
+* assignment (atribuição)       = += -= *= %=
+*/
 
 
 
