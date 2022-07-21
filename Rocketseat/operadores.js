@@ -65,3 +65,14 @@ x **= 2
 // remainder assignment(resto de divisão):
 x %= 2
 
+
+
+//*operadores logicos*//
+//and &&
+//or ||
+//not !
+
+
+
+
+
