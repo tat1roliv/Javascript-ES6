@@ -74,5 +74,16 @@ x %= 2
 
 
 
+/*operador ternario*/
+//condição ? valor1 : valor2
+
+let pao = false
+let queijo = false
+
+const niceBreakfast = pao && queijo ? 'yes' : 'no'
+
+console.log(niceBreakfast);
+
+
 
 
