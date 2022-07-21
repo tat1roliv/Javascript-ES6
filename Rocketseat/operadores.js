@@ -1,5 +1,5 @@
 /*
-* operadores aritimeticos
+* operadores
 */
 
 /* resto da divisão: sinal % */
@@ -39,3 +39,29 @@ console.log(one == 1);//true
 console.log(one == "1");//true
 console.log(one === 1);//true
 console.log(one === "1");//false
+
+
+// Operadores de atribuição (Assignment)
+let x
+
+// assignment normal:
+x = 1
+
+// addition assignment:
+x += 2
+
+// subtraction assignment:
+x -= 1
+
+// multiplication assignment
+x *= 2
+
+// division assignment
+x /= 2
+
+// exponetiation assignment
+x **= 2
+
+// remainder assignment(resto de divisão):
+x %= 2
+
