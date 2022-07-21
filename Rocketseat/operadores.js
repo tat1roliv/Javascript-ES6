@@ -80,9 +80,48 @@ x %= 2
 let pao = false
 let queijo = false
 
-const niceBreakfast = pao && queijo ? 'yes' : 'no'
-
+const niceBreakfast = pao && queijo ? 'yes' : 'no';
 console.log(niceBreakfast);
+
+let age = 21;
+const canDrive = age >=18 ? 'yes' : 'no'; 
+console.log(canDrive);
+
+
+
+
+/* FALSY */
+/*
+	Todos os valores abaixo seriam representados como false em um boolean.
+		false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+*/
+
+console.log( 0 ?  'verdadeiro' : 'false');
+
+
+/* TRUTHY */
+/* 
+	Todos os valores abaixo seriam representados como false em um boolean.
+		true
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+*/
+
+console.log( Infinity ? 'verdadeiro' : 'falso' );
+
 
 
 
