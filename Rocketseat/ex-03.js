@@ -11,7 +11,7 @@ saldo positivo ou negativo, seguido do valor do saldo.
 
 const registros = {
     entradas: [35124, 38000, 4000],
-    saidas: [8000, 1000, 6000, 10000, 15000, 1865, 3000, 1500, 10000, 10000]
+    saidas: [8000, 1000, 6000, 10000, 15000, 1865, 3000, 1500, 10000, 7000, 3000, 10000]
 }
 
 
