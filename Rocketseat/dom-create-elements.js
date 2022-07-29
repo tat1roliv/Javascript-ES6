@@ -16,3 +16,15 @@ body.append(div);
 //prepend
 body.prepend(div);
 
+
+//insertBefore 
+//entre elementos
+const script = document.querySelector('script');
+body.insertBefore(div, script)
+
+
+//"after"
+const header = body.querySelector('header');
+//body.insertBefore(div, header.nextSibling)
+
+
