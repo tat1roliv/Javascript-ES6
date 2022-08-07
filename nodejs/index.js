@@ -1,5 +1,9 @@
 //console.log('rodando via script')
 
+//process.stdout
+//process.stdin
+//process.on
+
 //process.stdout.write("testing \n\n");
 
 const questions = [ 
@@ -31,6 +35,7 @@ process.on('exit', function imprimeTela(){
     console.log(`
         resultados 
         _____________________________
+        
         resposta à pergunta 1:
         ${answers[0]}
 
