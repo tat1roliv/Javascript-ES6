@@ -1,0 +1,17 @@
+/*
+terminal
+*/
+
+//iniciando projeto node
+npm init -y
+
+//criando servidor
+npm install ejs
+npm install express
++ server.js
+
+//rodar servidor
+node server.js
+
+
+
