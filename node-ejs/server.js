@@ -9,14 +9,14 @@ app.set("view engine", "ejs");
 
 //rotas
 app.get("/", function(req, res){
-    res.render("index");//index.ejs
+    res.render("pages/index");//index.ejs
 })
 
 app.get("/sobre", function(req, res){
-    res.render("about");//about.ejs
+    res.render("pages/about");//about.ejs
 })
 
 //rodar servidor
 app.listen(8080);
-console.log("rodando")
+console.log("servidor rodando")
 
